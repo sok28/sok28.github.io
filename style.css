@@ -7,9 +7,23 @@ body {
 
 	font-family: 'Roboto', sans-serif;
 }
-.container {
+.conteiner {
 	width: 1200px;
 	margin: 0 auto;
-	
 
+
+}
+.col-md-3 {
+	width: 25%;
+}
+.col-md-6 {
+	width: 50%;
+}
+[class*="col-"] {
+	float: left;
+}
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
 }

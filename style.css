@@ -28,7 +28,7 @@ body {
 	padding-left: 15px;
 
 }
-.row:after {
+.row:after,.menu:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -36,4 +36,18 @@ body {
 .header {
 	background-color: rgba(255,255,255,0.75);
 	padding:25px 0;
+}
+.menu li {
+	width: 25%;
+	float:left;
+	border-left: 1px solid #2c71b8; 
+}
+.menu a {
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 21px;
+	color: #2c71b8;
 }

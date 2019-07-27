@@ -6,6 +6,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-image: url(imeges/patt.png);
 }
+a {
+	text-decoration: none;
+}
+input [type="placeholder"]{
+	color: #2c71b8;
+}
 .conteiner {
 	width: 1170px;
 	margin: 0 auto;
@@ -193,11 +199,63 @@ body {
 	height: 840px;
 	background-color: rgba(255,255,255,0.50);
 	border-right: 1px solid white;
+	padding-left: 20px;
+	padding-top: 20px;
+	color: white;
+	font-size: 24px;
+	position: relative;
+	font-weight: 300;
 }
 .filter:after {
 	content: "";
 	clear: both;
 	display: block;
+	
+}
+.filter p {
+	margin-top: 30px;
+	font-size: 20px;
+}
+.filter strong {
+	margin-left:0px;
+	padding-left: 0px;
+
+}
+.filter div {
+	padding-top: 30px;
+}
+.filter label{
+	margin-top: 30px;
+}
+label {
+	position: relative;
+	margin-top: 30px;
+}
+label:before {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 10px;
+	border: 1px solid white;
+}
+input[type="checkbox"]:checked +label:before {
+	background-color: white;
+}
+
+
+input[type="checkbox"] {
+	display: none;
+}
+.submit {
+	width: 210px;
+	height: 50px;
+	border: 1px solid white;
+	background-color: #2b71b9;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
+
 }
 .way {
 	font-size: 14px;
